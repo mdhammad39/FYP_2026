@@ -88,7 +88,7 @@ const YieldMap = () => {
                     <div className="underline"></div>
                     <p>
                         Average predicted wheat yields across all 36 districts in Punjab province,
-                        calculated from 25 years of historical climate and NDVI data using our Ensemble model.
+                        calculated from 25 years of historical climate and NDVI data using our Deep Learning model.
                     </p>
                 </div>
 
