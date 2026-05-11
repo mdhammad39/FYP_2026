@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app)
 swagger = Swagger(app)
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_DIR, "WHEAT_YIELD_LSTM_MODEL.h5")
 SCALER_PATH = os.path.join(BASE_DIR, "YIELD_SCALER_LSTM.pkl")
 COLUMNS_PATH = os.path.join(BASE_DIR, "DISTRICT_COLUMNS_LSTM.pkl")
@@ -211,6 +211,8 @@ def get_features():
         'feature_names': feature_names[:37] if feature_names else []
     })
 
+# Load model and data immediately so Gunicorn has them ready
+load_resources()
+
 if __name__ == '__main__':
-    if load_resources():
-        app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
