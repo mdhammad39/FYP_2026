@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="#fce7f3" />
+  <!-- Hair Back -->
+  <path d="M 60,95 A 40,40 0 0,1 140,95 L 140,125 A 15,15 0 0,1 110,140 L 90,140 A 15,15 0 0,1 60,125 Z" fill="#475569" />
+  <!-- Shoulders -->
+  <path d="M 45,160 C 45,130 70,120 100,120 C 130,120 155,130 155,160 Z" fill="#db2777" />
+  <!-- Head -->
+  <circle cx="100" cy="85" r="30" fill="#fbcfe8" />
+  <!-- Hair Front -->
+  <path d="M 60,85 C 60,55 140,55 140,85 C 120,70 80,70 60,85" fill="#475569" />
+</svg>
