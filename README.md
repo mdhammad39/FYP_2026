@@ -1,4 +1,4 @@
-Live Deployment https://fypwheatpredtion2026.app
+Live Deployment https://fypwheatprediction2026.app/
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
